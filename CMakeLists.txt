@@ -6,6 +6,8 @@ set(PROJECT_VERSION 1.1-dev)
 message(STATUS "~~~ ${PROJECT_NAME} ${PROJECT_VERSION} ~~~")
 
 
+add_definitions(-Wall)
+
 include_directories("include")
 
 subdirs(src)

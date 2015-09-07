@@ -93,7 +93,6 @@ SchemaTypeMemorySizeKB::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
-	bool						result;
 	int							min;
 	int							max;
 	int							val;
