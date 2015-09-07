@@ -11,3 +11,4 @@ add_definitions(-Wall -Wextra -pedantic)
 include_directories("include")
 
 subdirs(src)
+subdirs(tests/schema-types)
