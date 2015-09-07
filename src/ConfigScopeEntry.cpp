@@ -50,6 +50,8 @@ ConfigScopeEntry::ConfigScopeEntry(
 		ConfigItem *		item,
 		ConfigScopeEntry *	next)
 {
+    (void) name;
+    
 	m_item	= item;
 	m_next	= next;
 }

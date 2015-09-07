@@ -35,9 +35,10 @@ SchemaTypeTable::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) cfg;
+    
 	StringBuffer				msg;
 	int							i;
-	int							len;
 	const char *				columnType;
 	SchemaType *				typeDef;
 
@@ -45,7 +46,7 @@ SchemaTypeTable::checkRule(
 	// Check there is at least one pair of column-type, column-name
 	// arguments.
 	//--------
-	len = typeArgs.length();
+	int len = typeArgs.length();
 	if ((len == 0) || (len % 2 != 0)) {
 		msg << "the '" << typeName << "' type requires pairs of column-type "
 			<< "and column-name arguments in " << "rule '" << rule << "'";
@@ -94,6 +95,8 @@ SchemaTypeTable::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
+    (void) origTypeName;
+    
 	StringBuffer				msg;
 	StringBuffer				errSuffix;
 	StringBuffer				fullyScopedName;

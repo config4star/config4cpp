@@ -35,6 +35,8 @@ SchemaTypeInt::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    
 	StringBuffer				msg;
 	int							len;
 	int							min;
@@ -83,6 +85,10 @@ SchemaTypeInt::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) typeName;
+    (void) indentLevel;
+    
 	int							val;
 	int							min;
 	int							max;

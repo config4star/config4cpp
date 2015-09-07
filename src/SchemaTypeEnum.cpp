@@ -35,6 +35,9 @@ SchemaTypeEnum::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    (void) cfg;
+    
 	StringBuffer				msg;
 
 	if (typeArgs.length() == 0) {
@@ -56,6 +59,11 @@ SchemaTypeEnum::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) cfg;
+    (void) typeName;
+    (void) indentLevel;
+    
 	int							i;
 	int							len;
 
