@@ -7,7 +7,7 @@ add_executable(test-schema-types ${TEST_SCHEMA_TYPES_SRC})
 target_link_libraries(test-schema-types libconfig4cpp)
 
 
-add_custom_target(test-schema ALL 
+add_custom_target(test-schema
                     test-schema-types
                     -cfg
                     ${CMAKE_CURRENT_SOURCE_DIR}/${CFG_FILE}
