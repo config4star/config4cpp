@@ -79,4 +79,4 @@ ConfigScopeEntry::setItem(ConfigItem * item)
 	m_item = item;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

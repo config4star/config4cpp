@@ -735,4 +735,4 @@ LexBase::isIdentifierChar(const MBChar & mbCh)
 	return result;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

@@ -1623,4 +1623,4 @@ ConfigParser::error(const char * errMsg, bool printNear)
 	}
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

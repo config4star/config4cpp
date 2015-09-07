@@ -59,5 +59,5 @@ protected:
 		StringBuffer &			errSuffix) const;
 };
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 #endif

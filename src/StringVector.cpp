@@ -313,4 +313,4 @@ StringVector::operator[](int index) const
 	return m_array[index];
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

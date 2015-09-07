@@ -151,4 +151,4 @@ SchemaType::callIsA(
 					   errSuffix);
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

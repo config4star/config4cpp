@@ -155,4 +155,4 @@ bool LexToken::isListFunc()    { return m_funcType == LexBase::LIST_FUNC; }
 bool LexToken::isBoolFunc()    { return m_funcType == LexBase::BOOL_FUNC; }
 
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

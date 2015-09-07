@@ -60,4 +60,4 @@ ConfigurationException::c_str() const
 	return m_str;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE 
+} // namespace CONFIG4CPP_NAMESPACE 

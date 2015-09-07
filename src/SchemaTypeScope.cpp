@@ -70,5 +70,5 @@ SchemaTypeScope::validate(
 	cfg->lookupScope(scope, name);
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 

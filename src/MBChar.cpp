@@ -64,4 +64,4 @@ MBChar::operator==(const MBChar & other) const
 	return true;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

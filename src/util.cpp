@@ -53,4 +53,4 @@ splitScopedNameIntoVector(const char * str, StringVector & vec)
 	vec.add(startOfStr);
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
