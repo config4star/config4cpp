@@ -67,3 +67,14 @@ set(CONFIG4CPP_SRC config4cpp.cpp)
 add_executable(config4cpp-bin ${CONFIG4CPP_SRC})
 target_link_libraries(config4cpp-bin config4cpp)
 
+
+
+install(TARGETS config4cpp
+                LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+                ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+                RUNTIME DESTINATION ${CMAKE_INSTALL_LIBDIR}
+                )
+install(DIRECTORY ../include/config4cpp
+                DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+                )
+
