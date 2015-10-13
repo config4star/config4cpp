@@ -199,6 +199,6 @@ StringBuffer::operator << (char ch)
 }
 
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 #endif
 

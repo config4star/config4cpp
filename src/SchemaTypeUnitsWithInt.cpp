@@ -35,6 +35,9 @@ SchemaTypeUnitsWithInt::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    (void) cfg;
+    
 	StringBuffer			msg;
 
 	if (typeArgs.length() == 0) {
@@ -56,6 +59,10 @@ SchemaTypeUnitsWithInt::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) typeName;
+    (void) indentLevel;
+    
 	const char **				allowedUnits;
 	int							allowedUnitsSize;
 	int							i;
@@ -79,4 +86,4 @@ SchemaTypeUnitsWithInt::isA(
 	return result;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

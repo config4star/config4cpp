@@ -35,6 +35,8 @@ SchemaTypeDurationMicroseconds::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    
 	StringBuffer				msg;
 	int							len;
 	int							min;
@@ -99,6 +101,10 @@ SchemaTypeDurationMicroseconds::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) typeName;
+    (void) indentLevel;
+    
 	bool						ok;
 	int							min;
 	int							max;
@@ -144,5 +150,5 @@ SchemaTypeDurationMicroseconds::isA(
 	return true;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 

@@ -238,4 +238,4 @@ StringBuffer::growIfNeeded(int len)
 	m_buf = newBuf;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

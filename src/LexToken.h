@@ -99,5 +99,5 @@ inline short        LexToken::type()     { return m_type; }
 inline const char * LexToken::spelling() { return m_spelling.c_str(); }
 inline int          LexToken::lineNum()  { return m_lineNum; }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 #endif

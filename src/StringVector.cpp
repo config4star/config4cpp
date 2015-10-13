@@ -47,8 +47,6 @@ copyString(const char * str)
 
 StringVector::StringVector(int initialCapacity)
 {
-	int				i;
-
 	assert(initialCapacity > 0);
 	m_currSize = 0;
 	m_maxSize  = initialCapacity;
@@ -315,4 +313,4 @@ StringVector::operator[](int index) const
 	return m_array[index];
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

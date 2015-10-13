@@ -61,4 +61,4 @@ DefaultSecurityConfiguration::~DefaultSecurityConfiguration()
 	// Nothing to do
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

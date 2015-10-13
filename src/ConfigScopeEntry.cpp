@@ -50,6 +50,8 @@ ConfigScopeEntry::ConfigScopeEntry(
 		ConfigItem *		item,
 		ConfigScopeEntry *	next)
 {
+    (void) name;
+    
 	m_item	= item;
 	m_next	= next;
 }
@@ -77,4 +79,4 @@ ConfigScopeEntry::setItem(ConfigItem * item)
 	m_item = item;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

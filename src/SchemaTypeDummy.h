@@ -50,9 +50,15 @@ protected:
 		const char *			typeName,
 		const StringVector &	typeArgs,
 		const char *			rule) const throw(ConfigurationException)
-	{ }
+	{ 
+        (void) sv;
+        (void) cfg;
+        (void) typeName;
+        (void) typeArgs;
+        (void) rule;
+    }
 };
 
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 #endif

@@ -219,4 +219,4 @@ ConfigItem::dump(
 	};
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

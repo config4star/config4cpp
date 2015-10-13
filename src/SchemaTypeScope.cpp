@@ -35,6 +35,9 @@ SchemaTypeScope::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    (void) cfg;
+    
 	StringBuffer				msg;
 
 	if (typeArgs.length() != 0) {
@@ -58,8 +61,14 @@ SchemaTypeScope::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
+    (void) sv;
+    (void) typeName;
+    (void) origTypeName;
+    (void) typeArgs;
+    (void) indentLevel;
+    
 	cfg->lookupScope(scope, name);
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 

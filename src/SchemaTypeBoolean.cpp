@@ -36,6 +36,9 @@ SchemaTypeBoolean::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    (void) cfg;
+    
 	StringBuffer				msg;
 
 	if (typeArgs.length() != 0) {
@@ -57,6 +60,11 @@ SchemaTypeBoolean::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) typeArgs;
+    (void) typeName;
+    (void) indentLevel;
+    
 	bool						result;
 
 	result = cfg->isBoolean(value);
@@ -66,4 +74,4 @@ SchemaTypeBoolean::isA(
 	return result;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

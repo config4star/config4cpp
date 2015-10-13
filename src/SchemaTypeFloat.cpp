@@ -36,6 +36,8 @@ SchemaTypeFloat::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    
 	StringBuffer				msg;
 	int							len;
 	float						min;
@@ -84,6 +86,10 @@ SchemaTypeFloat::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) typeName;
+    (void) indentLevel;
+    
 	float						val;
 	float						min;
 	float						max;
@@ -106,5 +112,5 @@ SchemaTypeFloat::isA(
 	return true;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 

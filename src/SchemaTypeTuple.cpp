@@ -35,6 +35,8 @@ SchemaTypeTuple::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) cfg;
+    
 	StringBuffer				msg;
 	int							i;
 	int							len;
@@ -92,6 +94,8 @@ SchemaTypeTuple::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
+    (void) origTypeName;
+    
 	StringBuffer				msg;
 	StringBuffer				errSuffix;
 	StringBuffer				fullyScopedName;
@@ -103,7 +107,6 @@ SchemaTypeTuple::validate(
 	int							typeArgsSize;
 	int							elemNameIndex;
 	int							typeIndex;
-	int							rowNum;
 	int							numElems;
 	SchemaType *				elemTypeDef;
 	StringVector				emptyArgs;
@@ -137,7 +140,6 @@ SchemaTypeTuple::validate(
 	for (i = 0; i < listSize; i++) {
 		typeIndex     = (i * 2 + 0) % typeArgsSize;
 		elemNameIndex = (i * 2 + 1) % typeArgsSize;
-		rowNum = (i / numElems) + 1;
 		elemValue = list[i];
 		elemTypeName = typeArgs[typeIndex];
 		elemTypeDef = findType(sv, elemTypeName);
@@ -159,4 +161,4 @@ SchemaTypeTuple::validate(
 	}
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

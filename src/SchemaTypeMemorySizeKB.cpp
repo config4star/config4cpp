@@ -35,6 +35,8 @@ SchemaTypeMemorySizeKB::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) sv;
+    
 	StringBuffer				msg;
 	int							len;
 	int							min;
@@ -93,7 +95,10 @@ SchemaTypeMemorySizeKB::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
-	bool						result;
+    (void) sv;
+    (void) typeName;
+    (void) indentLevel;
+    
 	int							min;
 	int							max;
 	int							val;
@@ -118,4 +123,4 @@ SchemaTypeMemorySizeKB::isA(
 	return true;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

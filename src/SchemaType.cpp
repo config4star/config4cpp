@@ -60,6 +60,8 @@ SchemaType::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
+    (void) origTypeName;
+    
 	const char *				value;
 	const char *				sep;
 	StringBuffer				msg;
@@ -94,6 +96,14 @@ SchemaType::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
+    (void) sv;
+    (void) cfg;
+    (void) value;
+    (void) typeName;
+    (void) typeArgs;
+    (void) indentLevel;
+    (void) errSuffix;
+    
 	return false;
 }
 
@@ -141,4 +151,4 @@ SchemaType::callIsA(
 					   errSuffix);
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

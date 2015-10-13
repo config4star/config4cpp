@@ -642,4 +642,4 @@ ConfigScope::growIfTooFull()
 	delete [] origTable;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

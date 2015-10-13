@@ -35,7 +35,10 @@ SchemaTypeTypedef::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
-	StringBuffer				msg;
+    (void) sv;
+    (void) cfg;
+    
+	StringBuffer msg;
 
 	if (typeArgs.length() != 0) {
 		msg << "you cannot specify arguments when using user-defined type '"
@@ -58,7 +61,8 @@ SchemaTypeTypedef::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
-	StringBuffer				msg;
+    (void) typeName;
+    
 	SchemaType *				baseTypeDef;
 	const char *				baseTypeName;
 
@@ -81,18 +85,16 @@ SchemaTypeTypedef::isA(
 	int							indentLevel,
 	StringBuffer &				errSuffix) const
 {
-	StringBuffer				msg;
-	SchemaType *				baseTypeDef;
-	const char *				baseTypeName;
-	bool						result;
-
+    (void) value;
+    (void) typeName;
+    
 	assert(typeArgs.length() == 0);
-	baseTypeName = m_baseTypeName.c_str();
-	baseTypeDef = findType(sv, baseTypeName);
+	const char* baseTypeName = m_baseTypeName.c_str();
+	SchemaType* baseTypeDef = findType(sv, baseTypeName);
 	assert(baseTypeDef != 0);
-	result = callIsA(baseTypeDef, sv, cfg, value, baseTypeName, m_baseTypeArgs,
+	bool result = callIsA(baseTypeDef, sv, cfg, value, baseTypeName, m_baseTypeArgs,
 					 indentLevel + 1, errSuffix);
 	return result;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

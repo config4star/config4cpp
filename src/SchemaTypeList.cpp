@@ -36,6 +36,8 @@ SchemaTypeList::checkRule(
 	const StringVector &		typeArgs,
 	const char *				rule) const throw(ConfigurationException)
 {
+    (void) cfg;
+    
 	StringBuffer				msg;
 	int							len;
 	const char *				listElementTypeName;
@@ -91,6 +93,9 @@ SchemaTypeList::validate(
 	int							indentLevel) const
 											throw(ConfigurationException)
 {
+    (void) typeName;
+    (void) origTypeName;
+    
 	StringBuffer				msg;
 	StringBuffer				fullyScopedName;
 	StringBuffer				errSuffix;
@@ -129,4 +134,4 @@ SchemaTypeList::validate(
 	}
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

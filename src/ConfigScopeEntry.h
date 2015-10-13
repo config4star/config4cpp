@@ -52,7 +52,7 @@ public:
 
 	inline const char * name();
 	inline const ConfigItem * item();
-	inline const Configuration::Type type();
+	inline Configuration::Type type();
 	void setItem(ConfigItem * item);
 
 protected:
@@ -91,12 +91,12 @@ ConfigScopeEntry::item()
 }
 
 
-inline const Configuration::Type
+inline Configuration::Type
 ConfigScopeEntry::type()
 {
 	return m_item->type();
 }
 
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
 #endif

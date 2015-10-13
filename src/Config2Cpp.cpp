@@ -667,4 +667,4 @@ stringConcat(const char * s1, const char * s2, const char * s3)
 	return result;
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE

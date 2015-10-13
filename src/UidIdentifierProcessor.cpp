@@ -263,4 +263,4 @@ UidIdentifierProcessor::unexpandOne(
 	return buf.c_str();
 }
 
-}; // namespace CONFIG4CPP_NAMESPACE
+} // namespace CONFIG4CPP_NAMESPACE
