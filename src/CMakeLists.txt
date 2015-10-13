@@ -43,12 +43,7 @@ set(LIB_SRC SchemaLex.cpp
 			SchemaTypeTypedef.cpp
 			)
 
-add_library(libconfig4cpp ${LIB_SRC})
-set_target_properties(libconfig4cpp
-                        PROPERTIES
-                        PREFIX ""
-                        ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib
-                        )
+add_library(config4cpp ${LIB_SRC})
 
 
 set(CONFIG2CPP_SRC config2cpp-main.cpp
@@ -56,7 +51,7 @@ set(CONFIG2CPP_SRC config2cpp-main.cpp
                     )
 
 add_executable(config2cpp ${CONFIG2CPP_SRC})
-target_link_libraries(config2cpp libconfig4cpp)
+target_link_libraries(config2cpp config4cpp)
 
 
 set(CONFIG2CPP_NOCHECK_SRC config2cpp-nocheck-main.cpp
@@ -64,16 +59,11 @@ set(CONFIG2CPP_NOCHECK_SRC config2cpp-nocheck-main.cpp
                             )
 
 add_executable(config2cpp-nocheck ${CONFIG2CPP_NOCHECK_SRC})
-target_link_libraries(config2cpp-nocheck libconfig4cpp)
+target_link_libraries(config2cpp-nocheck config4cpp)
 
 
 set(CONFIG4CPP_SRC config4cpp.cpp)
 
 add_executable(config4cpp-bin ${CONFIG4CPP_SRC})
-target_link_libraries(config4cpp-bin libconfig4cpp)
+target_link_libraries(config4cpp-bin config4cpp)
 
-
-set_target_properties(config2cpp config2cpp-nocheck config4cpp-bin
-                        PROPERTIES
-                        RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin
-                        )
