@@ -14,7 +14,13 @@ G++, and (3) Windows with Visual C++ 6.0.
 
 To build on Linux or Cygwin, run the following commands:
 
+	mkdir build; cd build
+	cmake ..
 	make
+
+Pass CMAKE_INSTALL_PREFIX to cmake during configure to set installation
+prefix. Binaries will be installed to $PREFIX/bin, libraries to $PREFIX/lib
+respectively.
 
 To build on Windows with Visual C++, run the following commands:
 
